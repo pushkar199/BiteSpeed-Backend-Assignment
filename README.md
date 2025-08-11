@@ -1,4 +1,4 @@
-# Bitespeed Identify (SQLite) - Render Ready
+# Bitespeed Identify
 
 This project implements the `/identify` endpoint using Node.js + TypeScript + Express + SQLite.
 It's ready to be uploaded to GitHub and connected to Render for automatic deployment.
@@ -30,10 +30,5 @@ Body (JSON):
 { "email": "user@example.com", "phoneNumber": "123456" }
 ```
 
-## Deploy on Render
-1. Push this repo to GitHub.
-2. Create a new Web Service on Render and connect the GitHub repo.
-3. Render will run `npm install && npm run build` and start the service with `npm start`.
 
-The app uses a SQLite DB file (`contacts.db`) stored in the app directory. The free Render web service filesystem is ephemeral across deploys, but it persists for the lifetime of that instance. For production reliability consider an external DB.
 
